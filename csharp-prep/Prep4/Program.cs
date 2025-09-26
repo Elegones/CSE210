@@ -8,18 +8,24 @@ class Program
         List<int> numberList = new List<int>();
         Console.WriteLine("Enter any numbers you wish to add to the list, enter 0 when your finished");
         int numList = 1;
-        do
+
+        while (numList != 0)
         {
+
             string newNum = Console.ReadLine();
+
+
             numList = int.Parse(newNum);
 
 
             numberList.Add(numList);
+            
+            
 
 
-        } while (numList != 0);
+        } 
 
-       
+        numberList.Remove(0);
         int total = numberList.Sum();
         Console.WriteLine($"The sum is {total}");
 
