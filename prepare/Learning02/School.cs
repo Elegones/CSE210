@@ -1,4 +1,4 @@
-using System;
+
 
 public class School
 {
@@ -16,7 +16,7 @@ public class School
     }
 
 
-    public void ShowDeteails()
+    public void ShowDetails()
     {
         Console.WriteLine($"School:{name} has {numStudents} students and {numTeachers} Teachers");
 
