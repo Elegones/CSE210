@@ -1,6 +1,6 @@
 
 
-public class School
+/*public class School
 {
     public int numStudents;
 

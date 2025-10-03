@@ -1,8 +1,4 @@
-using System;
-
-class Program
-{
-    static void Main(string[] args)
+  /*static void Main(string[] args)
     {
         Console.WriteLine("Hello Learning02 World!");
         School school1= new School();
@@ -11,5 +7,4 @@ class Program
         school1.numTeachers= 500;
         
         school1.ShowDetails();
-    }
-}
+    }?*
