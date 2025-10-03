@@ -7,4 +7,4 @@
         school1.numTeachers= 500;
         
         school1.ShowDetails();
-    }?*
+    }*/ 
