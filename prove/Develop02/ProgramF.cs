@@ -26,7 +26,7 @@ using (StreamWriter outputFile = new StreamWriter(filename))
 public void LoadF()
 {
 
-string filename = "Develop2.txt";
+string filename = "Devolop2.txt";
 string[] lines = System.IO.File.ReadAllLines(filename);
 
 foreach (string line in lines)

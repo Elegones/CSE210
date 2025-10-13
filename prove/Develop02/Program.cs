@@ -48,7 +48,7 @@ class Program
             Centry.Dentry();
             _FullLine=Centry._FullLine;
             ProgramF Nfile = new ProgramF();
-            Nfile.OpenCreate(_FullLine);
+            Nfile.OpenCreate();
         }
          else  
         {
