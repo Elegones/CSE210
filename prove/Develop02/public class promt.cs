@@ -1,6 +1,6 @@
 using System;
 using System.Security.Cryptography;
-
+using System.IO; 
 public class Prompt
 
 {
@@ -10,7 +10,7 @@ public string _prompt;
 public int _choice=1;
 
 
-public void promptChoice()
+public string promptChoice()
 {
 
 Random randomGenerator = new Random();
@@ -43,6 +43,7 @@ else
 }
   
 Console.WriteLine(_prompt); 
+return _prompt;
 }
 
 }
