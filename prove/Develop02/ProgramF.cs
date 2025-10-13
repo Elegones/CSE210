@@ -9,14 +9,14 @@ public string _loadF;
 
 public string _fName;
 
-public void OpenCreate()
+public void OpenCreate(string _FullLine)
 {
 string filename = "Devolop2.txt";
 
 using (StreamWriter outputFile = new StreamWriter(filename))
 {
    
-    outputFile.WriteLine();
+    outputFile.WriteLine(_FullLine);
    
     
 }
