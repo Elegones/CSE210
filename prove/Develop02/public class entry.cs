@@ -19,8 +19,8 @@ public void Dentry()
  _Date = Console.ReadLine();
  
   Prompt Cprompt= new Prompt();
-  _Fprompt=Cprompt.promptChoice();
-
+ _Fprompt=Cprompt.promptChoice();
+ Console.WriteLine(_Fprompt); 
  Console.WriteLine("Comment: ");
 _Comment= Console.ReadLine();
 

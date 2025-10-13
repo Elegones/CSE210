@@ -42,7 +42,7 @@ else
 
 }
   
-Console.WriteLine(_prompt); 
+
 return _prompt;
 }
 

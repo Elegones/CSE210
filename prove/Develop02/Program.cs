@@ -4,36 +4,45 @@ using System.IO;
 class Program
 {
 
-    public string Ochoice;
+   
     
-    public string _FullLine;
+
+
     static void Main(string[] args)
     {
+      int Ochoice;
+      string Wchoice;
+      string _FullLine;
+
      Console.WriteLine("Menu: Option 1 Display Entry");
      Console.WriteLine("Menu: Option 2 Load Entry");
      Console.WriteLine("Menu: Option 3 save Entry");
      Console.WriteLine("Menu: Option 4 Add Entry");
      Console.WriteLine("Menu: Option 5  Exit");
 
-     Console.WriteLine("Enter the opertation number you would like to do?");
-     Ochoice = Console.Readline();
-     While(Ochoice != "5");
+     Console.WriteLine("Enter the opertation number you would like to do ?");
+     Ochoice=0;
+     while (Ochoice != 5)
      {
-        if (Ochoice=="1")
+       Wchoice = Console.ReadLine();
+       Ochoice=int.Parse(Wchoice);
+       
+
+        if (Ochoice==1)
         {
 
         }
-        else if (Ochoice=="2")
+        else if (Ochoice==2)
         {
 
         }
-         else if (Ochoice=="3")
+         else if (Ochoice==3)
         {
              Entry Centry= new Entry();
         Centry.Dentry();
 
         }
-         else if (Ochoice=="4")
+         else if (Ochoice==4)
         {
             Entry Centry= new Entry();
             Centry.Dentry();
@@ -43,7 +52,7 @@ class Program
         }
          else  
         {
-            Ochoice="5";
+            Ochoice=5;
 
         }
      }
@@ -51,8 +60,7 @@ class Program
 
        
 
-        Entry Centry= new Entry();
-        Centry.Dentry();
+       
 
 
 
