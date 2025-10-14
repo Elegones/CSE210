@@ -3,7 +3,7 @@ using System.Security.Cryptography;
 using System.IO; 
 class Program
 {
-
+ 
    
     
 
@@ -12,7 +12,7 @@ class Program
     {
       int Ochoice;
       string Wchoice;
-      string _FullLine;
+     string _FullLine="";
 
      Console.WriteLine("Menu: Option 1 Display Entry");
      Console.WriteLine("Menu: Option 2 Load Entry");
@@ -38,17 +38,17 @@ class Program
         }
          else if (Ochoice==3)
         {
-             Entry Centry= new Entry();
-        Centry.Dentry();
-
+           
+            ProgramF Nfile = new ProgramF();
+            Nfile.OpenCreate(_FullLine);
         }
          else if (Ochoice==4)
         {
             Entry Centry= new Entry();
             Centry.Dentry();
             _FullLine=Centry._FullLine;
-            ProgramF Nfile = new ProgramF();
-            Nfile.OpenCreate(_FullLine);
+          
+            
         }
          else  
         {

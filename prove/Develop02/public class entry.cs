@@ -11,7 +11,6 @@ public string _FullLine;
 public string _Fprompt;
 public void Dentry()
 
-
 {
      
     
