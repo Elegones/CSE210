@@ -9,9 +9,11 @@ public string _loadF;
 
 public string _fName;
 int i=0;
-public void OpenCreate(string[] FileList,int idx)
+
+//Used to create/ open file to save/add to
+public void OpenCreate(string[] FileList,int idx,string _FileChoice)
 {
-string filename = "Devolop2.txt";
+string filename = _FileChoice;
 
 using (StreamWriter outputFile = new StreamWriter(filename))
 {
@@ -28,11 +30,11 @@ using (StreamWriter outputFile = new StreamWriter(filename))
 }
 
 }
-
-public string[] LoadF()
+//Used to load from a file/ display from a file
+public string[] LoadF(string _FileChoice)
 {
 
-string filename = "Devolop2.txt";
+string filename = _FileChoice;
 string[] lines = System.IO.File.ReadAllLines(filename);
 
 

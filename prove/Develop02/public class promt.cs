@@ -9,7 +9,7 @@ public class Prompt
 public string _prompt;
 public int _choice=1;
 
-
+//Used to pick a random prompt from list of precreated prompts
 public string promptChoice()
 {
 
