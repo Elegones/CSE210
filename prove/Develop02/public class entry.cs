@@ -23,7 +23,7 @@ public void Dentry()
  Console.WriteLine("Comment: ");
 _Comment= Console.ReadLine();
 
-_FullLine = string.Concat(_Date,_Fprompt,_Comment);
+_FullLine = string.Concat(_Date, _Fprompt, _Comment);
 
 
 

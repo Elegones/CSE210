@@ -13,6 +13,12 @@ class Program
       int Ochoice;
       string Wchoice;
      string _FullLine="";
+     string _FileChoice="";
+     string[] Test;
+     string[] FileList;
+     int idx=0;
+     FileList= new string[100];
+     
 
      Console.WriteLine("Menu: Option 1 Display Entry");
      Console.WriteLine("Menu: Option 2 Load Entry");
@@ -26,29 +32,52 @@ class Program
      {
        Wchoice = Console.ReadLine();
        Ochoice=int.Parse(Wchoice);
-       
-
+       int i=0;
+       int two=0;
         if (Ochoice==1)
         {
-
+            ProgramF Nfile = new ProgramF();
+           Test= Nfile.LoadF();
+           
+            i=0;
+           foreach (string line in Test)
+            {
+                
+                Console.WriteLine(Test[i]);
+                i=i+1;
+            }
+            i=0;
         }
         else if (Ochoice==2)
         {
+
+            ProgramF Nfile = new ProgramF();
+           Test= Nfile.LoadF();
+           i=0;
+              foreach (string line in Test)
+            {
+                
+                FileList[idx] =Test[i];
+                idx++;
+                i++;
+                
+            }
+          i=0;
 
         }
          else if (Ochoice==3)
         {
            
             ProgramF Nfile = new ProgramF();
-            Nfile.OpenCreate(_FullLine);
+            Nfile.OpenCreate(FileList,idx);
         }
          else if (Ochoice==4)
         {
             Entry Centry= new Entry();
             Centry.Dentry();
             _FullLine=Centry._FullLine;
-          
-            
+          FileList[idx] =_FullLine;
+            idx++;
         }
          else  
         {
