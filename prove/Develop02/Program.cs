@@ -33,7 +33,7 @@ class Program
        Wchoice = Console.ReadLine();
        Ochoice=int.Parse(Wchoice);
        int i=0;
-       int two=0;
+       
         if (Ochoice==1)
         {
             ProgramF Nfile = new ProgramF();

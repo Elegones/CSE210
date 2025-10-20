@@ -14,7 +14,7 @@ public void Dentry()
 {
      
     
- Console.WriteLine("What is the date");
+ Console.WriteLine("What is the date: ");
  _Date = Console.ReadLine();
  
   Prompt Cprompt= new Prompt();
@@ -23,7 +23,7 @@ public void Dentry()
  Console.WriteLine("Comment: ");
 _Comment= Console.ReadLine();
 
-_FullLine = string.Concat(_Date, _Fprompt, _Comment);
+_FullLine = string.Concat($"Date:{_Date}, {_Fprompt}: {_Comment}");
 
 
 
