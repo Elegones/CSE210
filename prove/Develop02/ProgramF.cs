@@ -35,6 +35,13 @@ public string[] LoadF(string _FileChoice)
 {
 
 string filename = _FileChoice;
+using (StreamWriter outputFile = new StreamWriter(filename))
+{
+    
+    
+   
+    
+}
 string[] lines = System.IO.File.ReadAllLines(filename);
 
 
