@@ -30,18 +30,12 @@ using (StreamWriter outputFile = new StreamWriter(filename))
 }
 
 }
-//Used to load from a file/ display from a file
+//Used to load from a file/ display from a file, file needs to be made first
 public string[] LoadF(string _FileChoice)
 {
 
 string filename = _FileChoice;
-using (StreamWriter outputFile = new StreamWriter(filename))
-{
-    
-    
-   
-    
-}
+
 string[] lines = System.IO.File.ReadAllLines(filename);
 
 
