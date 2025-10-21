@@ -1,0 +1,8 @@
+bgfhghhg\
+hdghgd
+hgd
+Date:000,  What was your day like?: Good
+Date:10/10/10,  What was your day like?: Quite good
+
+Date:10/20/25, Is there anything you need to do today?: No
+
